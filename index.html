@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/e575e376f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="lighthouse hidden">
+      <div class="wrapper">
+        <header>
+          <div class="photographer__info--lighthouse">
+            <i class="fa-solid fa-camera"></i>
+            <span class="photographer__name"></span>
+          </div>
+          <div class="lighthouse__btn__container">
+            <i class="fa-solid fa-download preview__download"></i>
+            <i class="fa-solid fa-x close-menu"></i>
+          </div>
+        </header>
+        <div class="preview__img">
+          <div class="img">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="search" id="search">
+      <img src="./images/search-img.jpg" alt="" class="hero__img" />
+      <div class="hero__content">
+        <h1 class="hero__title">One of the Top Image Gallery</h1>
+        <p class="hero__description">
+          Search and download any images within a second
+        </p>
+        <form action="" class="hero__form">
+          <input
+            type="text"
+            placeholder="Search for Images"
+            autocomplete="off"
+            name="search"
+            class="hero__input"
+          />
+          <button class="btn hero__btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <ul class="images"></ul>
+      <button class="load__more">Load More</button>
+    </section>
+  </body>
+</html>
